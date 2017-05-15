@@ -52,6 +52,8 @@ production:
   database: profiart_panel_production
   username: profiart_panel
   password: <%= ENV['PROFIART_PANEL_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  
 
 other_db:
   adapter: mysql2

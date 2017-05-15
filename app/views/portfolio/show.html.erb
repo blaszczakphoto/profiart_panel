@@ -1,0 +1,43 @@
+<div class="portfolio-project-summary">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="portfolio-project-summary__logo"><img src="http://profiart.pl/wp-content/uploads/tmp/logo.png" /></div>
+      <div class="portfolio-project-summary__description">
+        <div>
+          <h3 class="portfolio-project-summary__description__header">Klient:</h3>
+          <p class="portfolio-project-summary__description__text"><%= page.client %></p>
+        </div>
+        <div>
+          <h3 class="portfolio-project-summary__description__header">Zakres prac:</h3>
+          <p class="portfolio-project-summary__description__text"><%= page.scope %></p>
+        </div>
+        <div>
+          <h3 class="portfolio-project-summary__description__header portfolio-project-summary__description__header--last">Technologie:</h3>
+          <div class="technologies-list">
+            <img src="http://profiart.pl/wp-content/uploads/tmp/prestashop.png" />
+            <img src="http://profiart.pl/wp-content/uploads/tmp/HTML5.png" />
+            <img src="http://profiart.pl/wp-content/uploads/tmp/jquery.png" />
+            <img src="http://profiart.pl/wp-content/uploads/tmp/prestashop.png" />
+            <img src="http://profiart.pl/wp-content/uploads/tmp/HTML5.png" />
+            <img src="http://profiart.pl/wp-content/uploads/tmp/jquery.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 text-center">
+      <div class="macbook-frame">
+        <img src="<%= page.thumb %>" />
+      </div>
+      <div class="macbook-frame__button">
+        <a href="<%= page.url %>" class="ot-btn border-dark">Zobacz online</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="portfolio-project-screens text-center">
+  <% page.screens.each do |screen_url| %>
+    <img src="<%= screen_url %>" />
+  <% end %>
+</div>
+
+<img class="portfolio-project-full-image" src="http://profiart.pl/wp-content/uploads/tmp/shopgun_photo.jpg" />

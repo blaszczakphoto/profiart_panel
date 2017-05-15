@@ -1,0 +1,84 @@
+// Place all the styles related to the Portfolio controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.portfolio-project-summary {
+  background-color: rgba(251, 251, 251, 0.95);
+  width: 90%;
+  padding-bottom: 16px;
+  border-bottom: 7px solid rgba(240, 142, 53, 0.9);
+  margin: 5% 0 0 5%;
+
+  &__logo {
+    margin: 48px 0 0 51px;
+  }
+
+  &__description {
+    margin-left: 50px;
+    margin-top: 23px;
+
+    &__header {
+      font-family: 'Poppins', sans-serif;
+      color: #333131;
+      font-size: 14px;
+      text-align: left;
+
+      &--last {
+        margin-bottom: 18px;
+      }
+    }
+
+    &__text {
+      font-family: 'Poppins', sans-serif;
+      color: #6d6d6d;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 17px;
+      text-align: left;
+    }
+  }
+}
+
+.technologies-list {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+  img {
+    display: block;
+    margin-right: 25px;
+  }
+}
+
+.macbook-frame {
+  background-image: url('http://profiart.pl/wp-content/uploads/tmp/macbook-frame.png');
+  display: inline-block;
+  height: 182px;
+  margin-top: 68px;
+  width: 337px;
+
+  img {
+    margin: 13px 59px 28px 57px;
+  }
+
+  &__button {
+    margin: 0 auto;
+    margin-top: 27px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.portfolio-project-screens {
+  margin-top: 37px;
+  width: 100%;
+
+  img {
+    margin-bottom: 65px;
+  }
+}
+
+.portfolio-project-full-image {
+  margin-bottom: 50px;
+  width: 100%;
+}

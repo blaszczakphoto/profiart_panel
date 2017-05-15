@@ -1,7 +1,7 @@
 <div class="portfolio-project-summary">
   <div class="row">
     <div class="col-lg-6">
-      <div class="portfolio-project-summary__logo"><img src="http://profiart.pl/wp-content/uploads/tmp/logo.png" /></div>
+      <div class="portfolio-project-summary__logo"><img src="<%= page.logo %>" /></div>
       <div class="portfolio-project-summary__description">
         <div>
           <h3 class="portfolio-project-summary__description__header">Klient:</h3>
@@ -14,12 +14,9 @@
         <div>
           <h3 class="portfolio-project-summary__description__header portfolio-project-summary__description__header--last">Technologie:</h3>
           <div class="technologies-list">
-            <img src="http://profiart.pl/wp-content/uploads/tmp/prestashop.png" />
-            <img src="http://profiart.pl/wp-content/uploads/tmp/HTML5.png" />
-            <img src="http://profiart.pl/wp-content/uploads/tmp/jquery.png" />
-            <img src="http://profiart.pl/wp-content/uploads/tmp/prestashop.png" />
-            <img src="http://profiart.pl/wp-content/uploads/tmp/HTML5.png" />
-            <img src="http://profiart.pl/wp-content/uploads/tmp/jquery.png" />
+            <% page.technologies_images.each do |url| %>
+              <img src="<%= url %>" />
+            <% end %>
           </div>
         </div>
       </div>
@@ -40,4 +37,4 @@
   <% end %>
 </div>
 
-<img class="portfolio-project-full-image" src="http://profiart.pl/wp-content/uploads/tmp/shopgun_photo.jpg" />
+<img class="portfolio-project-full-image" src="<%= page.image %>" />

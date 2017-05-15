@@ -20,7 +20,7 @@ module Admin
 
     def update
         super
-        ::SavePortfolioInWordpress.new(Portfolio.first).call
+        ::SavePortfolioInWordpress.new(requested_resource).call
     end
   end
 end

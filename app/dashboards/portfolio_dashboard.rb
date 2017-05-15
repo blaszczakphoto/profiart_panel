@@ -35,7 +35,6 @@ class PortfolioDashboard < Administrate::BaseDashboard
     :id,
     :logo,
     :client,
-    :scope,
     :url,
   ].freeze
 

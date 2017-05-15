@@ -22,5 +22,25 @@
 pl:
   helpers:
     label:
-      customer:
-        name: Full Name
+      portfolio:
+        client: Klient
+        scope: Zakres projektu
+        image: Obrazek na samym dole
+        thumb: Miniaturka
+        technologies: Wykorzystane technologie
+        wordpress_post_name: Nazwa portfolio i ID
+      technology:
+        thumb: Miniaturka
+        name: Nazwa(widoczna tylko w panelu administracyjnym)
+    submit:
+      update: Zapisz
+      create: Zapisz
+  activerecord:
+    models:
+      technology:
+        one: Technologia
+        other: Technologie
+      portfolio:
+        one: Portfolio
+        other: Portfolia
+

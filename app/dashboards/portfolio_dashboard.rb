@@ -43,17 +43,6 @@ class PortfolioDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = %i[
     id
     logo
-    client
-    scope
-    url
-    image
-    thumb
-    screen1
-    screen2
-    screen3
-    screen4
-    screen5
-    wordpress_post_name
   ].freeze
 
   # FORM_ATTRIBUTES

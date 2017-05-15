@@ -23,7 +23,7 @@ class PortfolioDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     technologies: Field::HasMany,
-    wordpress_post_name: Field::Select.with_options(collection: PortfolioWordpress.names_with_id)
+    wordpress_post_name: Field::Select.with_options(collection: PortfolioWordpress.names_with_id),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -31,48 +31,48 @@ class PortfolioDashboard < Administrate::BaseDashboard
   #
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
-  COLLECTION_ATTRIBUTES = [
-    :id,
-    :logo,
-    :client,
-    :url,
+  COLLECTION_ATTRIBUTES = %i[
+    id
+    logo
+    client
+    url
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
-  SHOW_PAGE_ATTRIBUTES = [
-    :id,
-    :logo,
-    :client,
-    :scope,
-    :url,
-    :image,
-    :thumb,
-    :screen1,
-    :screen2,
-    :screen3,
-    :screen4,
-    :screen5,
-    :wordpress_post_name,
+  SHOW_PAGE_ATTRIBUTES = %i[
+    id
+    logo
+    client
+    scope
+    url
+    image
+    thumb
+    screen1
+    screen2
+    screen3
+    screen4
+    screen5
+    wordpress_post_name
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
-  FORM_ATTRIBUTES = [
-    :client,
-    :logo,
-    :scope,
-    :url,
-    :image,
-    :thumb,
-    :screen1,
-    :screen2,
-    :screen3,
-    :screen4,
-    :screen5,
-    :technologies,
-    :wordpress_post_name,
+  FORM_ATTRIBUTES = %i[
+    client
+    logo
+    scope
+    url
+    image
+    thumb
+    screen1
+    screen2
+    screen3
+    screen4
+    screen5
+    technologies
+    wordpress_post_name
   ].freeze
 
   # Overwrite this method to customize how portfolios are displayed

@@ -6,6 +6,6 @@ class TechnologiesField < Administrate::Field::Base
   end
 
   def list
-  	%(html jquery presta wordpress rails css javascript)
+    %(html jquery presta wordpress rails css javascript)
   end
 end

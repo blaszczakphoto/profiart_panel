@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-	resources :portfolio
+  resources :portfolio
 
-	namespace :admin do
-		resources :portfolios
-		resources :technologies
+  namespace :admin do
+    resources :portfolios
+    resources :technologies
 
-		root to: "portfolios#index"
-	end
+    root to: "portfolios#index"
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

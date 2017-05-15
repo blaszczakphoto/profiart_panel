@@ -6,8 +6,6 @@ class SavePortfolioInWordpress
   end
 
   def call
-    page = PortfolioPresenter.new(portfolio)
-    rendered_html = ApplicationController.render('portfolio/show', layout: false, locals: {page: page})
     portfolio_wordpress = PortfolioWordpress.find(portfolio_wordpress_id)
     portfolio_wordpress.post_content = rendered_html
     portfolio_wordpress.save
@@ -19,7 +17,13 @@ class SavePortfolioInWordpress
     portfolio.wordpress_post_name.split("#").last.to_i
   end
 
-  def portfolio
-    @portfolio
+  def rendered_html
+    ApplicationController.render("portfolio/show", layout: false, locals: { page: page })
   end
+
+  def page
+    PortfolioPresenter.new(portfolio)
+  end
+
+  attr_reader :portfolio
 end

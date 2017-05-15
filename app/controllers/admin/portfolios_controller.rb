@@ -19,8 +19,8 @@ module Admin
     # for more information
 
     def update
-        super
-        ::SavePortfolioInWordpress.new(requested_resource).call
+      super
+      ::SavePortfolioInWordpress.new(requested_resource).call
     end
   end
 end

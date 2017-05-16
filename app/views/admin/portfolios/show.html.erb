@@ -47,9 +47,8 @@ as well as a link to its edit page.
     <% end %>
     <dt class="attribute-label">Link do portfolio na profiart.pl</dt>
     <dd class="attribute-data attribute-data--select">
-      <% wordpress_portfolio_id = page.resource.wordpress_post_name.split("#").last %>
       <a 
-        href="http://profiart.pl/?post_type=portfolio&p=<%= wordpress_portfolio_id %>&preview=true"
+        href="http://profiart.pl/?post_type=portfolio&p=<%= page.resource.portfolio_wordpress_id %>&preview=true"
         target="_blank"
       >
         Link do portfolio na profiart.pl

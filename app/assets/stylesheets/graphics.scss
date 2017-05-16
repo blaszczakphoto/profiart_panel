@@ -1,0 +1,18 @@
+// Place all the styles related to the Graphics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.c-graphics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__card {
+    width: 380px;
+    height: 380px;
+    padding: 5px;
+    border: 1px solid #eaeaed;
+
+    margin: 12px;
+  }
+}

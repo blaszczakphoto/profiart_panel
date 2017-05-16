@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'graphics/show'
+
   resources :portfolio
 
   namespace :admin do

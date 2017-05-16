@@ -23,7 +23,6 @@ class PortfolioDashboard < Administrate::BaseDashboard
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     technologies: Field::HasMany,
-    wordpress_post_name: Field::Select.with_options(collection: PortfolioWordpress.names_with_id),
     portfolio_wordpress: Field::BelongsTo,
   }.freeze
 
@@ -62,7 +61,6 @@ class PortfolioDashboard < Administrate::BaseDashboard
     screen4
     screen5
     technologies
-    wordpress_post_name
     portfolio_wordpress
   ].freeze
 

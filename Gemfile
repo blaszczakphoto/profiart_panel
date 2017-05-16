@@ -38,10 +38,10 @@ gem "haml-rails", "~> 1.0"
 
 group :development, :test do
   gem "dotenv-rails"
-  gem "pry-rails"
-  gem 'rspec-rails', '~> 3.6'
-  gem 'spring-commands-rspec'
   gem "factory_girl_rails", "~> 4.0"
+  gem "pry-rails"
+  gem "rspec-rails", "~> 3.6"
+  gem "spring-commands-rspec"
 end
 
 group :development do

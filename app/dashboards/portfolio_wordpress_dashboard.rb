@@ -38,68 +38,68 @@ class PortfolioWordpressDashboard < Administrate::BaseDashboard
   #
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
-  COLLECTION_ATTRIBUTES = [
-    :ID,
-    :post_author,
-    :post_date,
-    :post_date_gmt,
+  COLLECTION_ATTRIBUTES = %i[
+    ID
+    post_author
+    post_date
+    post_date_gmt
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
-  SHOW_PAGE_ATTRIBUTES = [
-    :ID,
-    :post_author,
-    :post_date,
-    :post_date_gmt,
-    :post_content,
-    :post_title,
-    :post_excerpt,
-    :post_status,
-    :comment_status,
-    :ping_status,
-    :post_password,
-    :post_name,
-    :to_ping,
-    :pinged,
-    :post_modified,
-    :post_modified_gmt,
-    :post_content_filtered,
-    :post_parent,
-    :guid,
-    :menu_order,
-    :post_type,
-    :post_mime_type,
-    :comment_count,
+  SHOW_PAGE_ATTRIBUTES = %i[
+    ID
+    post_author
+    post_date
+    post_date_gmt
+    post_content
+    post_title
+    post_excerpt
+    post_status
+    comment_status
+    ping_status
+    post_password
+    post_name
+    to_ping
+    pinged
+    post_modified
+    post_modified_gmt
+    post_content_filtered
+    post_parent
+    guid
+    menu_order
+    post_type
+    post_mime_type
+    comment_count
   ].freeze
 
   # FORM_ATTRIBUTES
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
-  FORM_ATTRIBUTES = [
-    :ID,
-    :post_author,
-    :post_date,
-    :post_date_gmt,
-    :post_content,
-    :post_title,
-    :post_excerpt,
-    :post_status,
-    :comment_status,
-    :ping_status,
-    :post_password,
-    :post_name,
-    :to_ping,
-    :pinged,
-    :post_modified,
-    :post_modified_gmt,
-    :post_content_filtered,
-    :post_parent,
-    :guid,
-    :menu_order,
-    :post_type,
-    :post_mime_type,
-    :comment_count,
+  FORM_ATTRIBUTES = %i[
+    ID
+    post_author
+    post_date
+    post_date_gmt
+    post_content
+    post_title
+    post_excerpt
+    post_status
+    comment_status
+    ping_status
+    post_password
+    post_name
+    to_ping
+    pinged
+    post_modified
+    post_modified_gmt
+    post_content_filtered
+    post_parent
+    guid
+    menu_order
+    post_type
+    post_mime_type
+    comment_count
   ].freeze
 
   # Overwrite this method to customize how portfolio wordpresses are displayed

@@ -24,6 +24,7 @@ class PortfolioDashboard < Administrate::BaseDashboard
     updated_at: Field::DateTime,
     technologies: Field::HasMany,
     wordpress_post_name: Field::Select.with_options(collection: PortfolioWordpress.names_with_id),
+    portfolio_wordpress: Field::BelongsTo,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -62,6 +63,7 @@ class PortfolioDashboard < Administrate::BaseDashboard
     screen5
     technologies
     wordpress_post_name
+    portfolio_wordpress
   ].freeze
 
   # Overwrite this method to customize how portfolios are displayed

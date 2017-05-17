@@ -88,7 +88,6 @@ to display a collection of resources in an HTML table.
           ) %></td>
         <% end %>
         <td>
-        <% wordpress_portfolio_id = resource.wordpress_post_name.split("#").last %>
           <a 
             href="http://profiart.pl/?post_type=portfolio&p=<%= resource.portfolio_wordpress_id %>&preview=true"
             target="_blank"

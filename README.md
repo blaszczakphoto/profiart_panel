@@ -14,3 +14,7 @@ copy styles.css to:
 Edytor wizualny -> custom css (nie podmnieniaj wszystkiego)
 
 `rm -rf styles.css styles.css.map`
+
+
+# How to deploy rails panel
+`git push heroku master`

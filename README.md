@@ -2,7 +2,7 @@
 
 http://intense-mountain-90425.herokuapp.com/admin
 
-# How to run
+# How to run locally
 ```
 rs
 ```
